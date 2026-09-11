@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Georgia, "Times New Roman", serif;
+    background: linear-gradient(135deg, #16002e, #3b0764, #7c2d12, #0f172a);
+    background-size: 400% 400%;
+    animation: backgroundMove 15s ease infinite;
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.tribute {
+    max-width: 850px;
+    margin: auto;
+    padding: 50px 45px;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 25px;
+
+    backdrop-filter: blur(12px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.small-title {
+    color: #facc15;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #ffd700;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #f5d0fe;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.line {
+    width: 100px;
+    height: 4px;
+    margin: 0 auto 35px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #facc15, #fb7185, #c084fc);
+}
+
+.message {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #f8fafc;
+    margin-bottom: 25px;
+}
+
+blockquote {
+    margin: 35px 0;
+    padding: 25px;
+    border-left: 5px solid #facc15;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    color: #fde68a;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+blockquote span {
+    display: block;
+    margin-top: 12px;
+    color: #f9a8d4;
+    font-size: 16px;
+}
+
+h3 {
+    margin: 40px 0 25px;
+    font-size: 25px;
+    color: #fb7185;
+    text-shadow: 0 0 15px rgba(251, 113, 133, 0.6);
+}
+
+.blessing {
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 18px;
+    background: rgba(250, 204, 21, 0.12);
+    border: 1px solid rgba(250, 204, 21, 0.3);
+
+    color: #fef3c7;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.signature {
+    margin-top: 35px;
+    font-size: 20px;
+    color: #f9a8d4;
+    font-style: italic;
+}
+
+.footer {
+    margin-top: 45px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: #c4b5fd;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    .tribute {
+        padding: 35px 20px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .message {
+        font-size: 16px;
+    }
+
+    blockquote {
+        font-size: 17px;
+    }
+
+    h3 {
+        font-size: 21px;
+    }
+}
